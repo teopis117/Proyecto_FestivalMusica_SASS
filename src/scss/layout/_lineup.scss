@@ -1,0 +1,104 @@
+.lineup
+{
+    background-color: $rosa;
+    padding: $separacion 0;
+    h3
+    {
+        text-align: center;
+        color: $blanco;
+    }
+    p 
+    {
+        text-align: center;
+        color: $blanco;
+    }
+
+    .dia
+    {
+        text-transform: uppercase;
+        margin: $separacion 0;
+    }
+}
+
+.escenario-contenedor
+{
+
+    .escenario
+    {
+        padding-top: $separacion / 2;
+    }
+
+    // creamos el formato para tablet
+    @include tablet
+    {   
+        // inclumios el includ de grid pasandole como parametros columnas y gridgap
+        @include grid(2,$separacion);
+    
+    
+    }
+    .nombre-escenario
+    {
+        color: $negro;
+        font-size: 2rem;
+        font-weight: $delgada;
+
+        &::after
+        {
+            content: '';
+            width: 20rem;
+            height: 10rem;
+            display: block;
+            margin: 2rem auto 0 auto;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            // con background-position:  nos ayuda a centrar nuestra imagen dandole un valor o dos valores el primero para x y el segundo para Y;
+            background-position: center center;
+        }
+    }
+}
+
+.edm .nombre-escenario
+{
+    &::after
+    {
+        background-image: url(/src/img/icono_edm.png);
+    }
+}
+
+.rock .nombre-escenario
+{
+    &::after
+    {
+        background-image: url(/src/img/icono_rock.png);
+    }
+}
+
+.calendario
+{
+    padding: 0;
+    list-style: none;
+
+    li
+    {
+        padding: $separacion / 2;
+        font-weight: $bold;
+
+        span
+        {
+            font-weight: $regular;
+        }
+    }
+}
+// con esto podemos aplicar a los elementos que cumplan con esa condicion o lugar,pero tiende a ser muy confusa
+// .calendario li:nth-child(2n+1)
+.bg-verde .calendario li:nth-child(odd)
+{
+    // darken es una funcion unicamente de css que nos sirve para oscurecer a una variante de nuestro color base 
+    background-color:darken($verde,10);
+}
+
+.bg-amarillo .calendario li:nth-child(odd)
+{
+    // darken es una funcion unicamente de css que nos sirve para oscurecer a una variante de nuestro color base 
+    background-color:darken($amarillo,10);
+}

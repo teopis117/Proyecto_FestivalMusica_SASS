@@ -1,0 +1,32 @@
+{
+  "name": "festivalmusica_proyecto_sass",
+  "version": "1.0.0",
+  "description": "aprendiendo SASS y GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teopis117/Proyecto_FestivalMusica_SASS.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "web",
+    "design"
+  ],
+  "author": "jose eduardo diaz morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teopis117/Proyecto_FestivalMusica_SASS/issues"
+  },
+  "homepage": "https://github.com/teopis117/Proyecto_FestivalMusica_SASS#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.38.0"
+  }
+}

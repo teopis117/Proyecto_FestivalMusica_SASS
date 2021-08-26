@@ -1,0 +1,61 @@
+.video
+{
+
+    position: relative;
+    max-height: 70rem;
+    overflow: hidden;
+    .overlay
+    {
+        // cuando le damos position absolute tendra como cordenadas y no se saldra de su cuadro tomando como referencia al elemento padre que tenga como position relative
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // lo primero que le pasearemos es hacia donde ira el degradado,el color de inicio,
+
+        //tambien puede tomar grados= DEG
+
+        // podemos utilizar una herramienta llamada zoofila para poder hacer uno de mejor manera
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#891c1e+0,9e37f2+75,ffffff+100&0.8+0,0.5+100 */
+    background: -moz-linear-gradient(-45deg,  rgba(137,28,30,0.8) 0%, rgba(158,55,242,0.57) 75%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(137,28,30,0.8) 0%,rgba(158,55,242,0.57) 75%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(137,28,30,0.8) 0%,rgba(158,55,242,0.57) 75%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc891c1e', endColorstr='#80ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    
+    }
+
+    video
+    {
+display: block;
+width: 100%;
+    }
+}
+//los saltos de linea con br ya no se hacen actualmente,entonces debemos de hacerlo con puro css
+.contenido-video
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    // con z-index nos servira para sobreponer o llevar atras un elemento en nuestro layout
+    z-index: 1;
+
+    h2
+    {
+        display: flex;
+        flex-direction: column;
+        color: $blanco;
+        font-size: 7rem;
+        align-items: flex-start;
+
+
+        span
+        {
+            // como el elemento span pertenece al h2 este le estara dando estilos como lo es el ancho asi que mientras mas grande sea el h2 este span seguira creciendo poco a poco
+            background-color: $rosa;
+            font-size: 2rem;
+            
+            padding: 1rem 2rem;
+        }
+    }
+}

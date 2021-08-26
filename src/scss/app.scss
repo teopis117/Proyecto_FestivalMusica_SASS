@@ -1,0 +1,14 @@
+
+//agregamos un _(guion bajo) para que puedas decirle al compilador que sera tomado de otro archivo pero lo agregamos con un import
+@import 'normalice';
+@import 'mixins';
+@import 'variables';
+@import 'globales';
+@import 'utilidades';
+// agregamos la fuente de google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import 'layout/header';
+@import 'layout/video';
+@import 'layout/festival';
+@import 'layout/lineup';
+@import 'layout/galeria';

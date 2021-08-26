@@ -1,0 +1,42 @@
+//necesitaremos gulp y el .json para en el guardar las dependencia
+//gulp por lo general solo se utiliza en desarrollo
+
+// require para importar
+const {series,parallel}= require('gulp');
+// por que gulp y no sass? por el uso de este tipo de funciones
+
+
+
+function css(done)
+{
+    console.log("hola mundo en gulp");
+    done();
+}
+// partes importantes en Node
+// require export
+
+// exports para que hagamos disponible al codigo
+
+
+function javascript(done)
+{
+    console.log("compilando javascript");
+    done();
+}
+
+function minificar(done)
+{ 
+    console.log("minificando");
+    done();
+}
+exports.css =css;
+exports.javascript =javascript;
+// de esta manera podre hacer un export que pueda contener a dos
+
+
+// series las compila de manera que las definamos
+exports.default = series(css,javascript,minificar);
+
+// parallel todas las tareas inician al mismo tiempo pero terminan conforme sean resueltas
+
+exports.tareas= parallel(css,javascript,minificar);

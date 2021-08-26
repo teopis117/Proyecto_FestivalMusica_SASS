@@ -1,0 +1,28 @@
+//creando mixin
+@mixin telefono {
+    @media (min-width:$telefono) {
+        //agrgamos directivas para que admita bloques de contenido osea muchas propiedades
+        @content;
+
+    }
+}
+@mixin tablet {
+    @media (min-width:$tablet) {
+        //agrgamos directivas para que admita bloques de contenido osea muchas propiedades
+        @content;
+
+    }
+}
+@mixin desktop {
+    @media (min-width:$desktop) {
+        //agrgamos directivas para que admita bloques de contenido osea muchas propiedades
+        @content ;
+
+    }
+}
+//los mixin tambien recibiran valores y asi es la manera conforme los iran entregando
+@mixin grid($columnas,$espaciado) {
+    display: grid;
+    grid-template-columns: repeat($columnas,1fr);
+    gap:$espaciado;
+}

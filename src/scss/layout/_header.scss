@@ -1,0 +1,52 @@
+// con sass podemos anidar el codigo css
+.header
+{
+
+   background-color: $verde;
+
+    .contenido-header
+    {
+        padding: $separacion / 2 0;
+
+        @include tablet{
+
+            display: flex;
+            justify-content: space-between;
+            // con align-items:  alineamos verticalmente;
+            align-items: center;
+        }
+    }
+    h1
+    {
+        color: $blanco;
+        // un mixin es algo que podamos reutilizar
+        // @include nuevoMixin;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        @include tablet
+        {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.navegacion-principal
+{
+    display: flex;
+    // con display flex podemos agregar separacion a los elementos siempre y cuando utilicemos GAP
+    gap: 2rem ;
+    justify-content: center;
+
+    a{
+        color: $blanco;
+        font-size: 2rem;
+
+        //con & hacemos referencia al elemento padre en el cual estamos trabajando
+        &:hover
+        {
+            color: $amarillo;
+        }
+    }
+}

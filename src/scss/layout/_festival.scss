@@ -1,0 +1,36 @@
+.sobre-festival
+{
+    padding: $separacion 0;
+
+    @include tablet 
+    {//    con esto podemos darle el display grid y poder utilizar sus funciones
+        @include grid(2,$separacion);
+        // creamos dos columnas de 1 fr cada una osea que ocuparan el mismo espacio entre las dos
+       
+    }
+}
+
+.contenido-festival
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2
+    {
+        font-size: 3rem;
+    }
+    .fecha
+    {
+        color: $rosa;
+        font-weight:$bold;
+    }
+    .texto
+    {   //por lo general line height no utiliza valores con medidas si no que llevaran 1,2,3 y en especial el de 1.5
+        line-height: 1.5;
+    }
+   
+
+
+
+}

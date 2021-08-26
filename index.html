@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Rock</title>
+    <link rel="stylesheet" href="src/scss/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Rock & EDM Festival</h1>
+            <nav class="navegacion-principal">
+                <a href="#">Line Up</a>
+                <a href="#">Galeria</a>
+                <a href="#">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <!-- en la etiqueta video contamos con varios atributos para poder utilizarlo
+        controls: para controles
+        autoplay: para autoreproducirse
+        muted: silenciar el video
+        loop:   un bucle al video -->
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM Festival
+                    <span>Julio 2021,Guadalajara México</span>
+                </h2>
+            </div>
+            
+        </div>
+            <video  controls autoplay muted loop>
+                <source src="video/concierto.mp4" type="video/mp4">
+                <source src="video/concierto.ogg" type="video/ogg">
+                <source src="video/concierto.webm" type="video/webm">
+            </video>
+    </div>
+
+    <div class="sobre-festival contenedor">
+        <div class="imagen">
+            <img src="src/img/imagen_vocalista.jpg" alt="imagen del vocalista cantando">
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Julio 2021,Chiapas,Mexico</p>
+            <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste itaque quisquam praesentium pariatur voluptatibus iure asperiores illum voluptates, amet autem dolorem omnis tempore nobis facere hic, consectetur maiores adipisci recusandae!</p>
+        </div>
+    </div>
+    <!-- para usar un section es cuando el primer hijo sera un heading -->
+    <section class="lineup">
+        <h3>Line up</h3>
+        <p class="dia">Viernes 21</p>
+        <div class="escenario-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metallica</span></li>
+                    <li>22:00 | <span>pearl</span></li>
+                    <li>20:00 | <span>Mkorn</span></li>
+                    <li>19:00 | <span>Marimba</span></li>
+                    <li>18:00 | <span>Skap</span></li>
+                    <li>13:00 | <span>Juanes</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metallica</span></li>
+                    <li>22:00 | <span>pearl</span></li>
+                    <li>20:00 | <span>Mkorn</span></li>
+                    <li>19:00 | <span>Marimba</span></li>
+                    <li>18:00 | <span>Skap</span></li>
+                    <li>13:00 | <span>Juanes</span></li>
+                </ul>
+            </div>
+        </div>
+        <p class="dia">Sabado 22</p>
+        <div class="escenario-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario rock</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metallica</span></li>
+                    <li>22:00 | <span>pearl</span></li>
+                    <li>20:00 | <span>Mkorn</span></li>
+                    <li>19:00 | <span>Marimba</span></li>
+                    <li>18:00 | <span>Skap</span></li>
+                    <li>13:00 | <span>Juanes</span></li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>24:00 | <span>Metallica</span></li>
+                    <li>22:00 | <span>pearl</span></li>
+                    <li>20:00 | <span>Mkorn</span></li>
+                    <li>19:00 | <span>Marimba</span></li>
+                    <li>18:00 | <span>Skap</span></li>
+                    <li>13:00 | <span>Juanes</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes">
+            
+        </ul>
+
+    </section>
+
+<script src="js.js"></script>
+</body>
+</html>
