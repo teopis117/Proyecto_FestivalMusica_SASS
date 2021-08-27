@@ -14,7 +14,10 @@ body
 {
     font-family: $fuentePrincipal;
     font-size: 1.6rem;
-
+    &.fijar-body
+    {
+        overflow: hidden;
+    }
 }
 
 p{
@@ -56,3 +59,4 @@ h3
 {
     font-size: 3rem;
 }
+
